@@ -9,7 +9,7 @@ CBN model has been developed by Prof. Niko Beerenwinkel group and the software i
 https://www.bsse.ethz.ch/cbg/software/ct-cbn.html
 
 ## Step 1: Preparing the genotype file.
-The genotype file is a 
+Each line in a genotype file represents a genotype, a binary vector of a given length, each element of which correponds to a given mutation, and is 1 if mutation exists and zero otherwise. The first line of the genotype file is a single number indicating the number of genotypes existing in the genotype file. 
 
 ## Step 2: Generating an initial DAG of restrictions using CT-CBN.
 
