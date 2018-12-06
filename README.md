@@ -5,7 +5,7 @@ The following is a pipeline for quantifying the predictability of cancer evoluti
 
 
 ## Step 0: Downloading the CT-CBN software.
-CBN model has been developed by Prof. Niko Beerenwinkel group and the software is free to download in the link below:
+CBN model has been developed by Prof. Niko Beerenwinkel group and the software is free to download via the link below:
 https://www.bsse.ethz.ch/cbg/software/ct-cbn.html
 
 ## Step 1: Preparing the genotype file.
