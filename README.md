@@ -21,8 +21,8 @@ https://www.bsse.ethz.ch/cbg/software/ct-cbn.html
 
 # Based on Fitness landscapes:
 
-## Step 1: prepare your fitness alndscape
-## Step 2: Quantifying the poredictability:
+## Step 1: prepare your fitness alndscape.
+## Step 2: Quantifying the poredictability.
 
 
 
