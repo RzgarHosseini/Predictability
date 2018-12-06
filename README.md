@@ -18,8 +18,10 @@ In this step, starting from an empty poset, using CT-CBN we generate an initial 
 In this step, starting from the DAG of restrictions generated in step 2, using H-CBN (with 10000 steps of simulated annealing and T=1) we generate the final DAG of restrictions (see the ReadMe file of the CT-CBN for more details).
 
 ## Step 4: Data Preprocessing.
+Make sure to remove the first and the last line of the final DAG file (with .poset extension). 
 
 ## Step 5: Quantifying the predictability.
+Based on the DAG file (with .poset extension) and the LAMBDA file (with .lambda extension), using "PREDICTABILITY_CBN.R" function, which depends on "ALLOWED.R" function, predictability can be computed.   
 
 # ii) Based on Fitness landscapes:
 
