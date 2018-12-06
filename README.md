@@ -12,10 +12,10 @@ https://www.bsse.ethz.ch/cbg/software/ct-cbn.html
 Each line in a genotype file represents a genotype, a binary vector of a given length, each element of which correponds to a given mutation, and is 1 if mutation exists and zero otherwise. The first line of the genotype file is a single number indicating the number of genotypes existing in the genotype file. 
 
 ## Step 2: Generating an initial DAG of restrictions using CT-CBN.
-In this step, we use the following line of code for generating the initial DAG of restrictions based on the CT-CBN model:
-
+In this step, starting from an empty poset, using CT-CBN we generate an initial DAG of restrictions (see the ReadMe file of the CT-CBN for more details)
 
 ## Step 3: Generating the final DAG of restrictions and Lambda values using H-CBN.
+In this step, starting from the DAG of restrictions generated in step 2, using H-CBN (with 10000 steps of simulated annealing and T=1) we generate the final DAG of restrictions (see the ReadMe file of the CT-CBN for more details).
 
 ## Step 4: Data Preprocessing.
 
