@@ -21,13 +21,15 @@ In this step, starting from the DAG of restrictions generated in step 2, using H
 Make sure to remove the first and the last line of the final DAG file (with .poset extension). 
 
 ## Step 5: Quantifying the predictability.
-Based on the DAG file (with .poset extension) and the LAMBDA file (with .lambda extension), using "PREDICTABILITY_CBN.R" function, which depends on "ALLOWED.R" function, predictability can be computed.   
+Based on the DAG file (with .poset extension) and the LAMBDA file (with .lambda extension), using "PREDICTABILITY_CBN.R" function, which depends on "ALLOWED.R" function, predictability can be computed. Both PREDICTABILITY_CBN.R and ALLOWED.R ara available in this folder. 
 
 # ii) Based on Fitness landscapes:
 
 ## Step 1: prepare your fitness alndscape.
-## Step 2: Quantifying the poredictability.
+By assigning a fitness value to each of the genotypes in a genotype space comprising 2^x genotypes (x is the number of mutations), we will have a fitness landscape that can be used for quantifying the predictability of cancer evolution. 
 
+## Step 2: Quantifying the predictability.
+Based on the fitness landscape file produced in step 1, we can quantify the predictability of evolution using PREDICTABILITY_SSWM.R in this folder.
 
 
 
