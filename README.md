@@ -25,7 +25,7 @@ Based on the DAG file (with .poset extension) and the LAMBDA file (with .lambda 
 
 # ii) Based on Fitness landscapes:
 
-## Step 1: prepare your fitness alndscape.
+## Step 1: preparing the fitness alndscape.
 By assigning a fitness value to each of the genotypes in a genotype space comprising 2^x genotypes (x is the number of mutations), we will have a fitness landscape that can be used for quantifying the predictability of cancer evolution. 
 
 ## Step 2: Quantifying the predictability.
