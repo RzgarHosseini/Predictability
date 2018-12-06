@@ -1,9 +1,9 @@
-# Quantifying the predictability of cancer progression using Conjunctive Bayesian Networks
+# Quantifying the predictability of cancer evolution
 Sayed-Rzgar Hosseini
 
-The following is a pipeline for quantifying the predictability of cancer evolution based on Conjunctive Bayesian Networks (CBNs):
+The following is a pipeline for quantifying the predictability of cancer evolution based either on i) fitness landscapes or ii) Conjunctive Bayesian Networks (CBNs):
 
-
+# Based on Conjunctive Bayesian Networks:
 ## Step 0: Downloading the CT-CBN software.
 CBN model has been developed by Prof. Niko Beerenwinkel group and the software is free to download via the link below:
 https://www.bsse.ethz.ch/cbg/software/ct-cbn.html
@@ -18,6 +18,14 @@ https://www.bsse.ethz.ch/cbg/software/ct-cbn.html
 ## Step 4: Data Preprocessing.
 
 ## Step 5: Quantifying the predictability.
+
+# Based on Fitness landscapes:
+
+# Step 1: prepare your fitness alndscape
+# Step 2: Quantifying the poredictability:
+
+
+
 
 
 
