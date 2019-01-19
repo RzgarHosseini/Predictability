@@ -32,7 +32,7 @@ PREDICTABILITY_SSWM<-function(FITNESS,x){
       for (j in 1:x){
         SN=which(GENO[j,]==0)# possible remaining mutations in the j-th step 
         N=length(SN)
-        S=fitness[(j+1)]-fitness[j]# slective coefficient of the j-th step [the numerator of the equation (5) in the main text]
+        S=fitness[(j+1)]-fitness[j]# slective coefficient of the j-th step [the numerator of the equation (7) in the main text]
         T=0;
         for (k in 1:N){# checking the genotypes belonging to the exit set
           ggeno=GENO[j,]
@@ -41,14 +41,14 @@ PREDICTABILITY_SSWM<-function(FITNESS,x){
           for (l in 1:x){ggeno_indx=ggeno_indx+2^(l-1)*ggeno[l]}
           fitness2=FITNESS[which(indx==ggeno_indx)]
           S1=fitness2-fitness[j]
-          if (S1>0){T=T+S1}# sum of the selecive coefficient of the genotypes in the exit set [the denominator of the equation (5) in the main text]
+          if (S1>0){T=T+S1}# sum of the selecive coefficient of the genotypes in the exit set [the denominator of the equation (7) in the main text]
         }
-        TEMP1=TEMP1*(S/T)#the product in equation (5)
+        TEMP1=TEMP1*(S/T)#the product in equation (7)
       }
       Prob[i]=TEMP1# probability of the i-th pathway
     }
   }
-  GG=sum(Prob,na.rm=TRUE)#normalization factor (equation 7 in the main text)
+  GG=sum(Prob,na.rm=TRUE)#normalization factor (equation 8 in the main text)
   for (i in 1:dim(PERM)[1]){
     Prob[i]=Prob[i]/GG
     if (sum(Prob[i],na.rm=TRUE)>0){TOT=TOT-Prob[i]*log(Prob[i])}#entropy
