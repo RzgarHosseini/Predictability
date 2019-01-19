@@ -1,6 +1,6 @@
 PREDICTABILITY_CBN<-function(DAG,LAMBDA,x){
   #DAG: matrix representing the DAG of restrictions.
-  #LAMBDA: vector of Lambda values produced by the CBN model
+  #LAMBDA: matrix of Lambda values produced by the CBN model
   #x: number of mutations considered.
   library('gtools')
   
