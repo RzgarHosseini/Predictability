@@ -48,17 +48,17 @@ PREDICTABILITY_CBN<-function(DAG,LAMBDA,x){
         SN2[kaka]<-allowed_set[FINAL_index]
       }
       SNN<-SN[which(SN2==1)]# THE EXIT SET: the set of (allowed) genotypes with one additional mutation than the current genotype
-      T<-sum(LAMBDA[(SNN+1),1]);# sum of the lambdas of the exit set [The denominator of the equation (11) in the main text]
+      T<-sum(LAMBDA[(SNN+1),1]);# sum of the lambdas of the exit set [The denominator of the equation (10) in the main text]
       ###################################################
-      S<-LAMBDA[(indx_lambda+1),1]# the lambda of the (j1-th mutation) [The numerator of the equation (11) in the main text]
-      TEMP1<-TEMP1*(S/T)# The multiplication in the equation (11) in the main text
+      S<-LAMBDA[(indx_lambda+1),1]# the lambda of the (j1-th mutation) [The numerator of the equation (10) in the main text]
+      TEMP1<-TEMP1*(S/T)# The multiplication in the equation (10) in the main text
     }
     if (flag==0){TEMP1<-0}# If the pathway is infeasible, its probability will be zero.
     Prob[i1]<-TEMP1 #pathway probability
   }
   
   ### Step4: Quantifying the predictability
-  GG=sum(Prob,na.rm=TRUE)#normalization factor (equation 13 in the main text)
+  GG=sum(Prob,na.rm=TRUE)#normalization factor (equation 11 in the main text)
   for (i1 in 1:dim(PERM)[1]){
     Prob[i1]=Prob[i1]/GG #Normalizing pathway probability such that the sum of all x! pathway probabilities become 1. 
     if (sum(Prob[i1],na.rm=TRUE)>0){TOT=TOT-Prob[i1]*log(Prob[i1])} #Computing the entropy of cancer progression for the given fitness landscape 
