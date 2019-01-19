@@ -19,6 +19,7 @@ In this step, starting from the DAG of restrictions generated in step 2, using H
 
 ## Step 4: Data Preprocessing.
 Make sure to remove the first and the last line of the final DAG file (with .poset extension). 
+Moreover, it is necessary to add a line with two zeros "0 0" to the end of the DAG file. 
 
 ## Step 5: Quantifying the predictability.
 Based on the DAG file (with .poset extension) and the LAMBDA file (with .lambda extension), using "PREDICTABILITY_CBN.R" function, which depends on "ALLOWED.R" function, predictability can be computed. Both PREDICTABILITY_CBN.R and ALLOWED.R ara available in this folder. 
