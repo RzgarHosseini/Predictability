@@ -1,6 +1,6 @@
 PREDICTABILITY_SSWM<-function(FITNESS,x){
     
-  #FITNESS: fitness vector of length 2^x
+  #FITNESS: fitness vector of length 2^x, each corresponding to a given genotype.
   #x: number of mutations considered.
   library('gtools')
   
