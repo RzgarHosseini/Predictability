@@ -1,4 +1,4 @@
-# Quantifying the predictability of cancer evolution
+# Estimating the predictability of cancer evolution
 Sayed-Rzgar Hosseini
 
 The following is a pipeline for quantifying the predictability of cancer evolution based either on i) Conjunctive Bayesian Networks (CBNs) or ii) Fitness Landscapes:
