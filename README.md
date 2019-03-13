@@ -7,6 +7,7 @@ The following is a pipeline for quantifying the predictability of cancer evoluti
 ## Step 0: Downloading the CT-CBN software.
 CBN model has been developed by Prof. Niko Beerenwinkel group and the software is free to download via the link below:
 https://www.bsse.ethz.ch/cbg/software/ct-cbn.html
+Moreover, the R functions in the step 5 require to install the Bioconductor package "OncoSimulR" (see https://bioconductor.org/packages/release/bioc/html/OncoSimulR.html). 
 
 ## Step 1: Preparing the genotype file.
 Each line in a genotype file represents a genotype, a binary vector of a given length, each element of which correponds to a given mutation, and is 1 if mutation exists and zero otherwise. The first line of the genotype file is a single number indicating the number of genotypes existing in the genotype file. 
@@ -22,7 +23,12 @@ Make sure to remove the first and the last line of the final DAG file (with .pos
 Moreover, it is necessary to add a line with two zeros "0 0" to the end of the DAG file. 
 
 ## Step 5: Quantifying the predictability.
-Based on the DAG file (with .poset extension) and the LAMBDA file (with .lambda extension), using "PREDICTABILITY_CBN.R" function, which depends on "ALLOWED.R" function, predictability can be computed. Both PREDICTABILITY_CBN.R and ALLOWED.R ara available in this folder. 
+Based on the DAG file (with .poset extension) and the LAMBDA file (with .lambda extension), using "PREDICTABILITY_CBN.R" function, which depends on "ALLOWED.R" function, predictability can be computed. Both PREDICTABILITY_CBN.R and ALLOWED.R ara available in this folder.
+
+#Inputs
+Inputs of the PREDICTABILITY_CBN.R function are as follows:
+#Inputs of the PREDICTABILITY_CBN.R function are as follows:
+
 
 # ii) Based on Fitness landscapes:
 
