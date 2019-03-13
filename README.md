@@ -27,10 +27,11 @@ Based on the DAG file (with .poset extension) and the LAMBDA file (with .lambda 
 # ii) Based on Fitness landscapes:
 
 ## Step 1: preparing the fitness alndscape.
-By assigning a fitness value to each of the genotypes in a genotype space comprising 2^x genotypes (x is the number of mutations), we will have a fitness landscape that can be used for quantifying the predictability of cancer evolution. 
+By assigning a fitness value to each of the genotypes in a genotype space comprising 2^x genotypes (x is the number of genes (or mutations)), we will have a fitness landscape that can be used for quantifying the predictability of cancer evolution. 
+In our simulations, we used binary genotypes of length 7, which results in a genotype space comprising 2^7=128 total genotypes (see genotypes.rds in this repository). We used 100 representable fitness landscape (see FitnessLandcape_Representable.rds in this repository) and 111 non-representable ones (see FitnessLandcape_NON_Representable.rds in this repository). Each row of the above .rds files corresponds to a given genotype (in the genotypes.rds file) and each column corresponds to a given fitness landscape. 
 
 ## Step 2: Quantifying the predictability.
-Based on the fitness landscape file produced in step 1, we can quantify the predictability of evolution using PREDICTABILITY_SSWM.R in this folder.
+Based on the fitness landscape file in step 1, we can quantify the predictability of evolution using PREDICTABILITY_SSWM.R in this folder.
 
 
 
